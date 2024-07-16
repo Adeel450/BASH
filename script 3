@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Your current directory is $(pwd)"
+cd /home/adeel
+echo "Your change directory is $(pwd)"
+
+
+
+# When you run this script your present directory is not change on command line ,
+
+#So you run this script like this source /script-name
