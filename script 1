@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 read -p "May i ask your name:" name
