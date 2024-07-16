@@ -1,0 +1,6 @@
+
+#!/bin/bash
+
+read -p "May i ask your name:" name
+echo "Hello $name"
+read -n1 -p "Press any key to exit"
