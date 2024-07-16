@@ -1,0 +1,11 @@
+#!/bin/bash
+
+pwd
+date
+echo hello
+echo bye
+set -x
+echo "Today date is $(date)"
+echo "Your prese directory is $(pwd)"
+set +x
+echo "------------------"
