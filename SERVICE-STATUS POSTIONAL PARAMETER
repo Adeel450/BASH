@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $# -ne 2 ]]; then
+    echo "Hey Admin, please run the script as per instructions."
+    echo "Example: $0 <servicename> <service-status>"
+    echo "Example: $0 docker status"
+    echo "Action valid: start, stop, restart, status"
+    
+else
+              service=$1
+              status=$2
+              sudo systemctl $status $service
+fi
+
