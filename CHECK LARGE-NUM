@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo -n "Enter a number: "
+read a
+echo -n "Enter b number: "
+read b
+echo -n "Enter c number: "
+read c
+
+if [[ $a -gt $b ]] && [[ $a -gt $c ]]; then
+    echo "a is greater"
+elif [[ $b -gt $a ]] && [[ $b -gt $c ]]; then
+    echo "b is greater"
+elif [[ $a -eq $b ]] && [[ $b -eq $c ]]; then
+    echo "All values are equal"
+else
+    echo "c is greater"
+fi
