@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Enter any service name to check:"
+read service
+
+status=$(ps -ef | grep -v grep | grep -c $service)
+
+if [[ $status -gt 0 ]]; then
+    echo "$service is running"
+else
+    echo "$service is not running"
+fi
