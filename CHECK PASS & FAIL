@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n "Enter your number: "
+read num
+
+if [[ $num -gt 60 ]]; then
+    echo "You are passed"
+else
+    echo "You are fail"
+fi
