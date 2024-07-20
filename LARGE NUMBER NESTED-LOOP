@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo -n "Enter first number: "
+read var1
+echo -n "Enter second number: "
+read var2
+echo -n "Enter third number: "
+read var3
+
+if [[ $var1 -ge $var2 ]]; then
+    if [[ $var1 -ge $var3 ]]; then
+        echo "$var1 is the largest"
+    else 
+        echo "$var3 is the largest"
+    fi
+else
+    if [[ $var2 -ge $var3 ]]; then
+        echo "$var2 is the largest"
+    else
+        echo "$var3 is the largest"
+    fi
+fi
