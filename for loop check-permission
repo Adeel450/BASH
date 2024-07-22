@@ -1,0 +1,9 @@
+for each in $(ls)
+do
+      if [[ -x $each ]]
+      then
+                  echo "$each having execute permission"
+       else
+                    echo "$each having not execute permission"
+        fi
+done
