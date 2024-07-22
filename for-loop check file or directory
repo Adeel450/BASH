@@ -1,0 +1,9 @@
+for rach in $(ls)
+do
+         if [[ -f $each ]]
+         then
+                   echo "$each is file"
+         else
+                   echo '$each is directory"
+         fi
+done
